@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">KB/s</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <string name="kBps">kB/s</string>
+    <string name="MBps">MB/s</string>
+    <string name="kbps">kb/s</string>
+    <string name="Mbps">Mb/s</string>
+
+    <string name="plus99">99+</string>
+    <string name="dash">-</string>
+
+    <!-- Option menu -->
+    <string name="about">About</string>
+    <string name="rate_this_app">Rate this app</string>
+
+    <!-- About -->
+    <string name="send_feedback">Send feedback</string>
+    <string name="feedback_email" translatable="false">netspeed.indicator@gmail.com</string>
+    <string name="feedback_subject">Feedback about NetSpeed Indicator App</string>
+    <string name="made_with_love_in_india">Made with ❤️ in India</string>
+
+    <!-- Notification Layout -->
+    <string name="notif_notification_icon">Notification Icon</string>
+    <string name="notif_settings_button">Settings Button</string>
+
+    <string name="notif_up_down_speed">Down: %s %s "   " Up: %s %s</string>
+
+    <!-- Settings -->
+    <string name="pref_enable_indicator_title">Enable Notification Indicator</string>
+    <string name="pref_enable_indicator_summary">Show notification indicator in the status bar</string>
+
+    <string name="pref_notification_settings_title">Notification Settings</string>
+
+    <string name="pref_settings_button_title">Settings button</string>
+    <string name="pref_settings_button_summary">Show a button in notification to open settings</string>
+
+    <string name="pref_notification_priority_title">Notification priority</string>
+    <string name="pref_notification_priority_max">Maximum</string>
+    <string name="pref_notification_priority_high">High</string>
+    <string name="pref_notification_priority_default">Normal</string>
+    <string name="pref_notification_priority_low">Low</string>
+
+    <string name="pref_indicator_speed_to_show">Speed to show in indicator icon</string>
+    <string name="pref_indicator_speed_total">Total speed</string>
+    <string name="pref_indicator_speed_down">Download speed</string>
+    <string name="pref_indicator_speed_up">Upload speed</string>
+
+    <string name="pref_lockscreen_notification_title">Lockscreen Notification</string>
+    <string name="pref_lockscreen_notification_summary_on">Show notification on lockscreen</string>
+    <string name="pref_lockscreen_notification_summary_off">Hidden notification from lockscreen</string>
+
+    <string name="pref_speed_unit_title">Speed units</string>
+    <string name="pref_speed_unit_Bps">Bytes per second</string>
+    <string name="pref_speed_unit_bps">Bits per second</string>
+
+    <string name="pref_general_options_title">General Options</string>
+
+    <string name="pref_start_on_boot_title">Start on boot</string>
+    <string name="pref_start_on_boot_summary">Start NetSpeed indicator on boot</string>
+    <string name="pref_start_on_boot_summary_on">The indicator will be started on boot</string>
+    <string name="pref_start_on_boot_summary_off">The indicator will not be started on boot</string>
+    <string name="title_activity_settings2">SettingsActivity2</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="policy">http://www.google.com</string>
+    <string name="version_name">1.0</string>
+    <string name="company_name">Seventy Seven Developers</string>
+    <string name="email">seventysevendevelopers@gmail.com</string>
+    <string name="app_description">description</string>
+
+
+</resources>
