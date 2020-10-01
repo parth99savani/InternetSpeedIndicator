@@ -82,8 +82,7 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="right"
-                    android:layout_marginRight="5dp"
+                    android:gravity="center"
                     android:layout_weight="1">
 
                     <LinearLayout
@@ -107,12 +106,12 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="8dp"
+                            android:layout_marginLeft="6dp"
                             android:orientation="vertical">
 
                             <TextView
                                 android:text="Mobile"
-                                android:textSize="14sp"
+                                android:textSize="13sp"
                                 android:textColor="@android:color/white"
                                 android:fontFamily="@font/circularstd_medium"
                                 android:layout_width="wrap_content"
@@ -122,22 +121,20 @@
                                 android:id="@+id/txtMobileToday"
                                 android:text="9999.99 MB"
                                 android:maxLines="1"
-                                android:textSize="18sp"
+                                android:textSize="17sp"
                                 android:textColor="@android:color/white"
                                 android:fontFamily="@font/circular_std_bold"
-                                android:layout_width="103dp"
+                                android:layout_width="100dp"
                                 android:layout_height="wrap_content"/>
 
                         </LinearLayout>
-
 
                     </LinearLayout>
 
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_marginLeft="5dp"
-                    android:gravity="left"
+                    android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
@@ -164,12 +161,12 @@
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="8dp"
+                            android:layout_marginLeft="6dp"
                             android:orientation="vertical">
 
                             <TextView
                                 android:text="Wifi"
-                                android:textSize="14sp"
+                                android:textSize="13sp"
                                 android:textColor="@android:color/white"
                                 android:fontFamily="@font/circularstd_medium"
                                 android:layout_width="wrap_content"
@@ -178,11 +175,11 @@
                             <TextView
                                 android:id="@+id/txtWifiToday"
                                 android:text="9999.99 GB"
-                                android:textSize="18sp"
+                                android:textSize="17sp"
                                 android:maxLines="1"
                                 android:textColor="@android:color/white"
                                 android:fontFamily="@font/circular_std_bold"
-                                android:layout_width="103dp"
+                                android:layout_width="100dp"
                                 android:layout_height="wrap_content"/>
 
                         </LinearLayout>
