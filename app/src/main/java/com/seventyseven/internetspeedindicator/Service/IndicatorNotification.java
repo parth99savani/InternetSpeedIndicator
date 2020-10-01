@@ -185,15 +185,27 @@ final class IndicatorNotification {
             channel = "";
         }
 
-        mNotificationBuilder = new Notification.Builder(mContext,channel)
-                .setSmallIcon(getIndicatorIcon("", ""))
-                .setPriority(Notification.PRIORITY_DEFAULT)
-                .setVisibility(Notification.VISIBILITY_SECRET)
-                .setContent(mNotificationContentView)
-                .setOngoing(true)
-                .setSound(null)
-                .setVibrate(new long[]{ 0 })
-                .setLocalOnly(true);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            mNotificationBuilder = new Notification.Builder(mContext,channel)
+                    .setSmallIcon(getIndicatorIcon("", ""))
+                    .setPriority(Notification.PRIORITY_DEFAULT)
+                    .setVisibility(Notification.VISIBILITY_SECRET)
+                    .setContent(mNotificationContentView)
+                    .setOngoing(true)
+                    .setSound(null)
+                    .setVibrate(new long[]{ 0 })
+                    .setLocalOnly(true);
+        } else {
+            mNotificationBuilder = new Notification.Builder(mContext)
+                    .setSmallIcon(getIndicatorIcon("", ""))
+                    .setPriority(Notification.PRIORITY_DEFAULT)
+                    .setVisibility(Notification.VISIBILITY_SECRET)
+                    .setContent(mNotificationContentView)
+                    .setOngoing(true)
+                    .setSound(null)
+                    .setVibrate(new long[]{ 0 })
+                    .setLocalOnly(true);
+        }
     }
 
     @NonNull

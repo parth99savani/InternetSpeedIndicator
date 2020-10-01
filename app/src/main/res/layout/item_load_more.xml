@@ -9,7 +9,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:innerRadius="0dp"
         android:shape="ring"
         app:cardElevation="2dp"
         app:cardUseCompatPadding="true"
@@ -18,10 +17,10 @@
         <ImageButton
             android:id="@+id/btnLoadMore"
             android:src="@drawable/ic_baseline_right_24"
-            android:padding="10dp"
-            android:background="@drawable/bg_more"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:background="@android:color/transparent"
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"/>
 
     </androidx.cardview.widget.CardView>
 

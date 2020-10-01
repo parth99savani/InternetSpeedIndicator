@@ -4,324 +4,339 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@android:color/white"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/ll1"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <TextView
-            android:text="Today"
-            android:textSize="18sp"
-            android:textColor="@android:color/white"
-            android:fontFamily="@font/circularstd_medium"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <LinearLayout
-            android:layout_marginTop="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/txtTodayTotal"
-                android:text="2.26"
-                android:textSize="55sp"
-                android:maxLines="1"
-                android:textColor="@android:color/white"
-                android:fontFamily="@font/circular_std_bold"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-            <TextView
-                android:id="@+id/txtUnitTodayTotal"
-                android:text="GB"
-                android:textSize="30sp"
-                android:layout_marginLeft="2dp"
-                android:textColor="@android:color/white"
-                android:fontFamily="@font/circular_std_bold"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-        </LinearLayout>
-
-        <TextView
-            android:text="Total Data Usage"
-            android:textSize="14sp"
-            android:textColor="#DBD5FF"
-            android:fontFamily="@font/circular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/ll2"
-        android:layout_below="@id/ll1"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
         <RelativeLayout
+            android:background="@color/colorPrimary"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:layout_marginRight="7dp"
-            android:layout_weight="1">
+            android:layout_height="wrap_content">
 
             <LinearLayout
-                android:background="@drawable/round_border"
+                android:id="@+id/ll1"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:paddingVertical="5dp"
-                android:paddingLeft="5dp"
-                android:paddingRight="10dp"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
-                <ImageButton
-                    android:src="@drawable/ic_phone"
-                    android:paddingVertical="8dp"
-                    android:paddingHorizontal="12dp"
-                    android:background="@drawable/round_button"
+                <TextView
+                    android:text="Today"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/circularstd_medium"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
                 <LinearLayout
+                    android:layout_marginTop="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:text="Mobile"
-                        android:textSize="14sp"
+                        android:id="@+id/txtTodayTotal"
+                        android:text="2.26"
+                        android:textSize="55sp"
+                        android:maxLines="1"
                         android:textColor="@android:color/white"
-                        android:fontFamily="@font/circularstd_medium"
+                        android:fontFamily="@font/circular_std_bold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
                     <TextView
-                        android:id="@+id/txtMobileToday"
-                        android:text="9999.99 MB"
-                        android:maxLines="1"
-                        android:textSize="18sp"
+                        android:id="@+id/txtUnitTodayTotal"
+                        android:text="GB"
+                        android:textSize="30sp"
+                        android:layout_marginLeft="2dp"
                         android:textColor="@android:color/white"
                         android:fontFamily="@font/circular_std_bold"
-                        android:layout_width="103dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
                 </LinearLayout>
 
-
-            </LinearLayout>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_marginLeft="7dp"
-            android:gravity="left"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-            <LinearLayout
-                android:background="@drawable/round_border"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:paddingVertical="5dp"
-                android:paddingLeft="5dp"
-                android:paddingRight="10dp"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:src="@drawable/ic_wifi"
-                    android:paddingVertical="8dp"
-                    android:paddingHorizontal="12dp"
-                    android:background="@drawable/round_button"
-                    android:backgroundTint="@color/colorYellow"
+                <TextView
+                    android:text="Total Data Usage"
+                    android:textSize="14sp"
+                    android:textColor="#DBD5FF"
+                    android:fontFamily="@font/circular"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:text="Wifi"
-                        android:textSize="14sp"
-                        android:textColor="@android:color/white"
-                        android:fontFamily="@font/circularstd_medium"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                    <TextView
-                        android:id="@+id/txtWifiToday"
-                        android:text="9999.99 GB"
-                        android:textSize="18sp"
-                        android:maxLines="1"
-                        android:textColor="@android:color/white"
-                        android:fontFamily="@font/circular_std_bold"
-                        android:layout_width="103dp"
-                        android:layout_height="wrap_content"/>
-
-                </LinearLayout>
-
-
             </LinearLayout>
 
-        </RelativeLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/ll2"
-        android:background="@drawable/bg_home"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
-
-        <TextView
-            android:text="Usage History"
-            android:textSize="18sp"
-            android:layout_marginTop="15dp"
-            android:textColor="#606060"
-            android:fontFamily="@font/circularstd_medium"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewHome"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <LinearLayout
-            android:layout_margin="10dp"
-            android:background="@drawable/round_border"
-            android:backgroundTint="#9E9E9E"
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingVertical="10dp"
-            android:paddingHorizontal="15dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:text="Last 30 days"
-                android:textSize="15sp"
-                android:textColor="#606060"
-                android:fontFamily="@font/circular"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
             <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_below="@id/ll1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="30dp"
                 android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_weight="1"
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:background="@drawable/round_border"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingVertical="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:src="@drawable/ic_phone"
+                            android:paddingVertical="8dp"
+                            android:paddingHorizontal="12dp"
+                            android:background="@drawable/round_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:text="Mobile"
+                                android:textSize="14sp"
+                                android:textColor="@android:color/white"
+                                android:fontFamily="@font/circularstd_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/txtMobileToday"
+                                android:text="9999.99 MB"
+                                android:maxLines="1"
+                                android:textSize="18sp"
+                                android:textColor="@android:color/white"
+                                android:fontFamily="@font/circular_std_bold"
+                                android:layout_width="103dp"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginLeft="5dp"
+                    android:gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:background="@drawable/round_border"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingVertical="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:src="@drawable/ic_wifi"
+                            android:paddingVertical="8dp"
+                            android:paddingHorizontal="12dp"
+                            android:background="@drawable/round_button"
+                            android:backgroundTint="@color/colorYellow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:text="Wifi"
+                                android:textSize="14sp"
+                                android:textColor="@android:color/white"
+                                android:fontFamily="@font/circularstd_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/txtWifiToday"
+                                android:text="9999.99 GB"
+                                android:textSize="18sp"
+                                android:maxLines="1"
+                                android:textColor="@android:color/white"
+                                android:fontFamily="@font/circular_std_bold"
+                                android:layout_width="103dp"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/ll2"
+                android:background="@drawable/bg_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Usage History"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#606060"
+                    android:fontFamily="@font/circularstd_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewHome"
                     android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:background="@drawable/round_border"
+                    android:backgroundTint="#9E9E9E"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="15dp"
                     android:orientation="vertical">
 
                     <TextView
-                        android:text="Mobile"
-                        android:textSize="14sp"
-                        android:textColor="#707070"
-                        android:fontFamily="@font/circularstd_medium"
+                        android:text="Last 30 days"
+                        android:textSize="15sp"
+                        android:textColor="#606060"
+                        android:fontFamily="@font/circular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
-                    <TextView
-                        android:id="@+id/txtMobile30Day"
-                        android:text="10.5 GB"
-                        android:textSize="16sp"
-                        android:maxLines="1"
-                        android:layout_marginTop="2dp"
-                        android:textColor="@android:color/black"
-                        android:fontFamily="@font/circular_std_bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
 
-                </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:orientation="vertical">
+                            <TextView
+                                android:text="Mobile"
+                                android:textSize="14sp"
+                                android:textColor="#707070"
+                                android:fontFamily="@font/circularstd_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
 
-                    <TextView
-                        android:text="Wifi"
-                        android:textSize="14sp"
-                        android:textColor="#707070"
-                        android:fontFamily="@font/circularstd_medium"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/txtMobile30Day"
+                                android:text="10.5 GB"
+                                android:textSize="16sp"
+                                android:maxLines="1"
+                                android:layout_marginTop="2dp"
+                                android:textColor="@android:color/black"
+                                android:fontFamily="@font/circular_std_bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
 
-                    <TextView
-                        android:id="@+id/txtWifi30Day"
-                        android:text="10.5 GB"
-                        android:textSize="16sp"
-                        android:maxLines="1"
-                        android:layout_marginTop="2dp"
-                        android:textColor="@android:color/black"
-                        android:fontFamily="@font/circular_std_bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        </LinearLayout>
 
-                </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:orientation="vertical">
+                            <TextView
+                                android:text="Wifi"
+                                android:textSize="14sp"
+                                android:textColor="#707070"
+                                android:fontFamily="@font/circularstd_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
 
-                    <TextView
-                        android:text="Total"
-                        android:textSize="14sp"
-                        android:textColor="#707070"
-                        android:fontFamily="@font/circularstd_medium"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/txtWifi30Day"
+                                android:text="10.5 GB"
+                                android:textSize="16sp"
+                                android:maxLines="1"
+                                android:layout_marginTop="2dp"
+                                android:textColor="@android:color/black"
+                                android:fontFamily="@font/circular_std_bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
 
-                    <TextView
-                        android:id="@+id/txtTotal30Day"
-                        android:text="10.5 GB"
-                        android:textSize="16sp"
-                        android:maxLines="1"
-                        android:layout_marginTop="2dp"
-                        android:textColor="@android:color/black"
-                        android:fontFamily="@font/circular_std_bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:text="Total"
+                                android:textSize="14sp"
+                                android:textColor="#707070"
+                                android:fontFamily="@font/circularstd_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/txtTotal30Day"
+                                android:text="10.5 GB"
+                                android:textSize="16sp"
+                                android:maxLines="1"
+                                android:layout_marginTop="2dp"
+                                android:textColor="@android:color/black"
+                                android:fontFamily="@font/circular_std_bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
             </LinearLayout>
 
-        </LinearLayout>
+        </RelativeLayout>
 
-    </LinearLayout>
+    </ScrollView>
+
+
 
 </RelativeLayout>

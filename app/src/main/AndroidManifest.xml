@@ -17,13 +17,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".AboutActivity"
-            android:label="About"></activity>
+            android:label="About"
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".UsageHistoryActivity"
-            android:label="Usage History" />
+            android:label="Usage History"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".SplashActivity"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,7 +35,8 @@
         </activity>
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings">
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
             </intent-filter>
@@ -40,7 +44,8 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/HomeTheme" />
+            android:theme="@style/HomeTheme"
+            android:screenOrientation="portrait"/>
 
         <service
             android:name=".Service.IndicatorService"
